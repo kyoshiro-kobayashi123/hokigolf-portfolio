@@ -1,0 +1,527 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+body, h1, p {
+    font-family: "Kosugi Maru", serif;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ヘッダー全体のスタイル */
+.header {
+    display: flex;
+    justify-content: space-around; /* ヘッダー内の要素を中央揃え */
+    align-items: flex-end;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    position: fixed; /* 固定する */
+    top: 0; /* 上部に配置 */
+    left: 0; /* 左端に配置 */
+    width: 100%; /* 横幅を全体に広げる */
+    z-index: 1000; /* 他の要素の上に表示されるようにする */
+}
+
+/* ロゴ部分 */
+.header-logo {
+    margin: 0; /* 余白をリセット */
+    
+}
+
+.header-logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* 縦方向の中央揃え */
+}
+
+.header-logo-img {
+    max-height: 120px; /* ロゴの高さを調整 */
+    width: 300px;
+    
+}
+
+/* ナビゲーション部分 */
+.header-nav {
+     /* ロゴ中央配置のためナビを固定 */
+    right: 20px; /* ヘッダーの右端に配置 */
+}
+
+.header-navlist {
+    list-style: none; /* 点や番号を削除 */
+    margin: 0; /* 外側の余白をリセット */
+    padding: 0; /* 内側の余白をリセット */
+    display: flex; /* 横並びに配置 */
+    gap: 25px; /* 各リンクの間隔を設定 */
+}
+
+.header-navitem a {
+    text-decoration: none; /* 下線を削除 */
+    color: #333; /* リンクの色 */
+    font-size: 20px; /* フォントサイズ */
+    transition: color 0.3s; /* ホバー時のスムーズな色変更 */
+    display: block;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+}
+
+.header-navitem a:hover {
+    border-bottom: 2px solid #333;
+}
+
+.oneday{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(98, 228, 163);
+    padding: 3px 20px;
+    margin-top: 130px;
+}
+
+.oneday img{
+    width: 400px;
+    height: 60px;
+    max-height: 60px; /* ロゴの高さを調整 */
+}
+/* メインビジュアル用スライダー */
+.main-visual {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+
+.main-visual .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-visual .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: red;
+    opacity: 1;
+}
+.contact-wrapper {
+  background-color: #f0fcff; /* ← 外側の色だけ */
+  padding: 30px 20px; /* 外枠の余白 */
+}
+.contact-form {
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 200px;
+}
+  
+.contact-form h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+  
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #00b894;
+    outline: none;
+}
+  
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.form-submit button {
+    background-color: #00b894;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.form-submit button:hover {
+    background-color: #009f80;
+}
+  
+.required {
+    color: red;
+    margin-left: 5px;
+}
+
+/* レッスン */
+.beginner-lesson {
+    background-color: #e3f4fc;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .lesson-banner img {
+    width: 100%;
+    max-width: 1100px;
+    height: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+  }
+  
+  .lesson-summary {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .lesson-summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .lesson-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .lesson-summary th,
+  .lesson-summary td {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+  }
+  
+  .lesson-summary th {
+    width: 30%;
+    background-color: #f0f8ff;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  
+  .lesson-summary td {
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .lesson-cta {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .lesson-btn {
+    display: inline-block;
+    background-color: #00b894;
+    color: white;
+    padding: 14px 36px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .lesson-btn:hover {
+    background-color: #009f80;
+    transform: scale(1.05);
+  }
+  .lesson-btn {
+    display: inline-block;
+    background-color: #00b894;
+    color: white;
+    padding: 14px 36px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    box-shadow: 0 6px 0 #008c6e; /* ← 立体感のポイント！ */
+    position: relative;
+    top: 0;
+  }
+  
+  .lesson-btn:hover {
+    background-color: #009f80;
+    transform: translateY(2px);         /* ↓ 押し込まれた感じ */
+    box-shadow: 0 4px 0 #008c6e;
+  }
+  
+  .lesson-btn:active {
+    transform: translateY(4px);         /* 押し込まれた感をさらに強く */
+    box-shadow: 0 2px 0 #007b66;
+  }
+
+  /* フッター */
+  .site-footer {
+    background-image: url("../img/homeend1.png"); /* ← 画像パスに合わせてね */
+    background-size: cover;         /* 画面幅に合わせて拡大縮小 */
+    background-position: top center;/* 上からスタート */
+    background-repeat: no-repeat;
+    padding: 40px 20px;             /* 既存の高さは変えずに維持 */
+    color: #333;
+
+  }
+  
+  
+  .footer-container {
+    max-width: 1100px; /* ← 元の1100pxを広げてもOK */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .footer-map iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px; /* ← 高さを調整！ */
+    display: block;
+    border: 0;
+  }  
+
+  .footer-map {
+    flex: 1 1 60%;
+    min-width: 300px;
+    margin-right: 40px;
+  }
+  
+  .footer-info {
+    flex: 1 1 35%;
+    min-width: 260px;
+  }
+  
+  .footer-logo {
+    width: 320px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-info p {
+    margin: 8px 0px 8px 30px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .footer-info a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+
+.hitokoto{
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央（必要に応じて） */
+  padding: 30px 0;         /* 上下に余白 */
+  text-align: center;
+}
+  /* お知らせ */
+  .news-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .news-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .news-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .news-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .news-date {
+    display: inline-block;
+    width: 120px;
+    color: #999;
+    font-weight: bold;
+  }
+  
+  .icon-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 中央揃え */
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    gap: 12px;
+  }
+  
+  .icon-img {
+    width: 40px;
+    height: 40px;
+  }
+  .mascot-slider {
+    display: flex;
+    justify-content: center; /* 横中央 */
+    align-items: center;     /* 縦中央（必要に応じて） */
+    padding: 40px 0;         /* 上下に余白 */
+    text-align: center;
+  }
+  
+  .mascot-slider img {
+    width: 250px;           /* 適宜調整 */
+    height: auto;
+    max-width: 90%;         /* レスポンシブ対応 */
+  }
+  
+  .news-summary {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #ddfdff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+  }
+  
+  .news-summary h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #00b894;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .news-summary .icon-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .news-table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+  
+  .news-table th,
+  .news-table td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .news-table th {
+    width: 200px;
+    color: #555;
+  }
+  
+  .news-label {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  
+  .news-label.important {
+    background-color: #e74c3c;
+  }
+  
+  .news-label.close {
+    background-color: #f39c12;
+  }
+  .news-wrapper {
+    background-color: #f0fcff; /* 外側の背景色 ←ここで好きな色に */
+    padding: 60px 0; /* 上下に余白をつけて目立たせる */
+  }
+  
+  .news-summary {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;  /* 内部カードの色（白） */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 30px 20px;
+  }
+  

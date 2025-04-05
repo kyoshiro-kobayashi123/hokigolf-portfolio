@@ -1,0 +1,105 @@
+.entry-form-container {
+    max-width: 800px;
+    margin: 180px auto 100px;
+    padding: 40px 20px;
+    background: #fffef5;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .entry-form-container h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .entry-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .entry-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .entry-form input,
+  .entry-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .birth {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .form-group input[type="radio"],
+  .form-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  .checklist p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .form-submit {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .form-submit button {
+    background-color: #00b894;
+    color: white;
+    padding: 14px 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-submit button:hover {
+    background-color: #009f80;
+  }
+  .birthdate-group {
+    margin-bottom: 20px;
+  }
+  
+  .birthdate-selects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .birthdate-selects select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .required {
+    color: red;
+    margin-left: 5px;
+  }
+  
+  .form-group input[type="password"],
+  .form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+   

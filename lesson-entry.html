@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新規レッスン申込 | Hoki Golf</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/zentai.css">
+  <link rel="stylesheet" href="style/entry.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header-logo">
+          <a href="index.html">
+            <img class="header-logo-img" src="img/rolo.png.jpeg" alt="タイトル" />
+          </a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-navlist">
+            <li class="header-navitem"><a href="price.html">料金体系・営業時間</a></li>
+            <li class="header-navitem">|</li>
+            <li class="header-navitem"><a href="login.html">レッスン予約</a></li>
+            <li class="header-navitem">|</li>
+            <li class="header-navitem"><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main class="entry-form-container">
+    <h2>レッスン新規申込フォーム</h2>
+    <form class="entry-form">
+      <div class="form-group">
+        <label>お名前（漢字）</label>
+        <input type="text" name="name-kanji" required>
+      </div>
+
+      <div class="form-group">
+        <label>お名前（カタカナ）</label>
+        <input type="text" name="name-kana" required>
+      </div>
+
+      <div class="form-group birthdate-group">
+        <label>生年月日</label>
+        <div class="birthdate-selects">
+          <!-- 元号 -->
+          <select name="birth_era" required>
+            <option value="">元号</option>
+            <option value="S">昭和</option>
+            <option value="H">平成</option>
+          </select>
+      
+          <!-- 年（1〜64） -->
+          <select name="birth_year" required>
+            <option value="">年</option>
+            <!-- 1〜64年 -->
+            <!-- ↓コピペ用に全て展開済み -->
+            <!-- 省略したいならJSで生成も可能 -->
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+            <option value="61">61</option>
+            <option value="62">62</option>
+            <option value="63">63</option>
+            <option value="64">64</option>
+          </select>
+          <span>年</span>
+      
+<!-- 月（1〜12） -->
+<select name="birth_month" required>
+    <option value="">月</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+  <span>月</span>
+  
+  <!-- 年齢（18〜80） -->
+  <select name="birth_age" required>
+    <option value="">歳</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+    <option value="36">36</option>
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+    <option value="45">45</option>
+    <option value="46">46</option>
+    <option value="47">47</option>
+    <option value="48">48</option>
+    <option value="49">49</option>
+    <option value="50">50</option>
+    <option value="51">51</option>
+    <option value="52">52</option>
+    <option value="53">53</option>
+    <option value="54">54</option>
+    <option value="55">55</option>
+    <option value="56">56</option>
+    <option value="57">57</option>
+    <option value="58">58</option>
+    <option value="59">59</option>
+    <option value="60">60</option>
+    <option value="61">61</option>
+    <option value="62">62</option>
+    <option value="63">63</option>
+    <option value="64">64</option>
+    <option value="65">65</option>
+    <option value="66">66</option>
+    <option value="67">67</option>
+    <option value="68">68</option>
+    <option value="69">69</option>
+    <option value="70">70</option>
+    <option value="71">71</option>
+    <option value="72">72</option>
+    <option value="73">73</option>
+    <option value="74">74</option>
+    <option value="75">75</option>
+    <option value="76">76</option>
+    <option value="77">77</option>
+    <option value="78">78</option>
+    <option value="79">79</option>
+    <option value="80">80</option>
+  </select>
+  <span>歳</span>
+  
+        </div>
+      </div>
+      
+      
+
+      <div class="form-group">
+        <label>性別</label>
+        <label><input type="radio" name="gender" value="男性"> 男</label>
+        <label><input type="radio" name="gender" value="女性"> 女</label>
+      </div>
+
+      <div class="form-group">
+        <label>ご住所</label>
+        <input type="text" name="address" required>
+      </div>
+
+      <div class="form-group">
+        <label>電話番号</label>
+        <input type="tel" name="phone" required>
+      </div>
+
+<!-- メールアドレス -->
+<div class="form-group">
+    <label for="email">メールアドレス<span class="required">*</span></label>
+    <input type="email" id="email" name="email" required placeholder="example@example.com" />
+  </div>
+  
+  <!-- メールアドレス（確認用） -->
+  <div class="form-group">
+    <label for="email-confirm">メールアドレス（確認用）<span class="required">*</span></label>
+    <input type="email" id="email-confirm" name="email-confirm" required placeholder="もう一度入力してください" />
+    <small id="email-error" class="error-message" style="color: red; display: none;">
+      メールアドレスが一致しません。
+    </small>
+  </div>
+  
+      <div class="form-group">
+        <label for="password">パスワード <span class="required">*</span></label>
+        <input type="password" id="password" name="password" required placeholder="半角英数字8文字以上">
+      </div>
+      
+      <div class="form-group">
+        <label for="password-confirm">パスワード（確認）<span class="required">*</span></label>
+        <input type="password" id="password-confirm" name="password_confirmation" required placeholder="もう一度入力">
+      </div>
+      
+      <div class="form-group">
+        <label>
+          <input type="checkbox" id="toggle-password"> パスワードを表示する
+        </label>
+      </div>
+      
+      <div class="form-group">
+        <label>クラブ貸し出し</label>
+        <label><input type="radio" name="rental" value="希望する"> 希望する</label>
+        <label><input type="radio" name="rental" value="希望しない"> 希望しない</label>
+      </div>
+
+      <div class="form-group checklist">
+        <p>以下の項目を確認のうえ、チェックを入れてください。</p>
+        <label><input type="checkbox" required> 私はゴルフ場でのラウンド経験はありません。</label><br>
+        <label><input type="checkbox" required> 私は暴力団等の社会的勢力には所属していません。</label><br>
+        <label><input type="checkbox" required> 当該施設の利用規約を尊守します。</label>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit">送信する</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Google Map 埋め込み -->
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.527044123239!2d133.04791477636147!3d35.49124397264918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355705b0fa8a410f%3A0xeb704a9977006004!2z44CSNjkwLTA4NjEg5bO25qC555yM5p2-5rGf5biC5rOV5ZCJ55S677yT77yQ77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1743174553723!5m2!1sja!2sjp" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+     
+      <!-- ロゴ + 住所 + 電話番号 -->
+      <div class="footer-info">
+        <img src="img/siro.png" alt="法吉ゴルフ ロゴ" class="footer-logo" />
+        <p>〒690-0861 島根県松江市法吉町300-1</p>
+        <p>TEL: <a href="tel:0852318888">0852-31-8888</a></p>
+      </div>
+    </div>
+  </footer>
+<script src="js/entry.js"></script>
+</body>
+</html>

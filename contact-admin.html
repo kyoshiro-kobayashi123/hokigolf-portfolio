@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ管理 | Hoki Golf</title>
+  <link rel="stylesheet" href="style/admin.css" />
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="admin-header">
+    <img src="img/rolo.png.jpeg" alt="ロゴ" class="admin-logo">
+    <h1>お問い合わせ管理ページ</h1>
+  </header>
+
+  <main class="admin-main">
+    <div class="filter-box">
+      <label for="contactDate">日付で絞り込み：</label>
+      <input type="date" id="contactDate">
+      <button id="contactFilterBtn">絞り込む</button>
+    </div>
+
+    <table class="reservation-table">
+      <thead>
+        <tr>
+          <th>日付</th>
+          <th>氏名</th>
+          <th>メールアドレス</th>
+          <th>内容</th>
+          <th>ステータス</th>
+        </tr>
+      </thead>
+      <tbody id="contactBody">
+        <!-- JSでデータ挿入 -->
+      </tbody>
+    </table>
+  </main>
+  <div class="back-to-admin">
+    <a href="admin-dashboard.html" class="back-button">← 管理者ページへ戻る</a>
+  </div>
+  
+  <script src="js/contact-admin.js"></script>
+</body>
+</html>
