@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ログイン | Hoki Golf</title>
+  <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Kiwi+Maru&family=Kosugi+Maru&family=Potta+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/zentai.css" /> <!-- 共通スタイル -->
+  <link rel="stylesheet" href="style/yoyaku.css" />  <!-- ログイン専用 -->
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="header">
+    <h1 class="header-logo">
+      <a href="index.html">
+        <img class="header-logo-img" src="img/rolo.png.jpeg" alt="タイトル" />
+      </a>
+    </h1>
+    <nav class="header-nav">
+      <ul class="header-navlist">
+        <li class="header-navitem"><a href="price.html">料金体系・営業時間</a></li>
+        <li class="header-navitem">|</li>
+        <li class="header-navitem"><a href="login.html">レッスン予約</a></li>
+        <li class="header-navitem">|</li>
+        <li class="header-navitem"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="calendar-section">
+    <h2>ご希望の来店日時を選択してください</h2>
+    <table class="calendar-table">
+      <thead>
+        <tr id="calendar-header">
+          <th>時間</th>
+          <!-- 日付はJavaScriptで挿入 -->
+        </tr>
+      </thead>
+      <tbody id="calendar-body">
+        <!-- 時間×日付マスをJSで挿入 -->
+      </tbody>
+    </table>
+  
+    <div class="calendar-legend">
+      <span class="circle">〇：予約可</span>
+      <span class="cross">×：満席</span>
+      <span class="close">休：休業日</span>
+    </div>
+  </section>
+  
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Google Map 埋め込み -->
+      <div class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3248.527044123239!2d133.04791477636147!3d35.49124397264918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355705b0fa8a410f%3A0xeb704a9977006004!2z44CSNjkwLTA4NjEg5bO25qC555yM5p2-5rGf5biC5rOV5ZCJ55S677yT77yQ77yQ4oiS77yR!5e0!3m2!1sja!2sjp!4v1743174553723!5m2!1sja!2sjp" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+     
+      <!-- ロゴ + 住所 + 電話番号 -->
+      <div class="footer-info">
+        <img src="img/rolo.png.jpeg" alt="法吉ゴルフ ロゴ" class="footer-logo" />
+        <p>〒690-0861 島根県松江市法吉町300-1</p>
+        <p>TEL: <a href="tel:0852318888">0852-31-8888</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/yoyaku.js"></script>
+
+</body>
+</html>
